@@ -13,7 +13,7 @@ class PrototypesController < ApplicationController
     if Prototype.create(prototype_params)
      redirect_to root_path
     else
-     render :edit,status: :unprocessable_entity
+     render :new,status: :unprocessable_entity
     end
   end
 
